@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
 /*****Base Styles*****/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
@@ -36,11 +41,71 @@ p {
 
 /*****Style modules*****/
 
-[class *= 'card'] > p {
-    font-size: .85rem;
+[class *= 'card'] {
+
+    border-radius: 10px;
+    box-shadow: 0px 20px 20px 5px rgba(0, 0, 0, 0.070);
+    border-top: 5px solid hsl(229, 6%, 66%);
+
+    p {
+        font-size: .85rem;
+        line-height: 1.8em;
+    }
+}
+
+.card1 {
+    border-color: hsl(180, 62%, 55%);
+}
+.card2 {
+    border-color: hsl(0, 78%, 62%);
+}
+.card3 {
+    border-color: hsl(34, 97%, 64%);
+}
+.card4 {
+    border-color: hsl(212, 86%, 64%);
 }
 
 /*****Layout modules*****/
 
+body {
+    padding: 0 10vw;
+}
 
+header {
+    max-width: 300px;
+    margin: 10vh auto;
+
+    text-align: center;
+
+    h1 {
+        margin-bottom: 2vh;
+    }
+}
+
+main {
+    margin: 10vh auto;
+    max-width: 300px;
+
+    display: flex;
+    flex-direction: column;
+
+    [class *= 'card'] {
+
+        max-width: 300px;
+        height: 225px;
+        padding: 1.8em 1.8em 1.8em 1.8em;
+        margin-bottom: 2em;
+
+        h2 {
+            margin-bottom: .4em;
+        }
+
+        img {
+            width: 20%;
+            display: block;
+            margin: 15% 0 0 auto;
+        }
+    }
+}
 

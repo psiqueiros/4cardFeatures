@@ -8,6 +8,11 @@
           box-sizing: border-box;
 }
 
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
 /*****Base Styles*****/
 * {
   font-family: 'Poppins', sans-serif;
@@ -34,9 +39,75 @@ p {
 }
 
 /*****Style modules*****/
-[class*='card'] > p {
+[class*='card'] {
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 20px 20px 5px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 20px 20px 5px rgba(0, 0, 0, 0.07);
+  border-top: 5px solid #a3a5ae;
+}
+
+[class*='card'] p {
   font-size: .85rem;
+  line-height: 1.8em;
+}
+
+.card1 {
+  border-color: #45d3d3;
+}
+
+.card2 {
+  border-color: #ea5353;
+}
+
+.card3 {
+  border-color: #fcaf4a;
+}
+
+.card4 {
+  border-color: #549ef2;
 }
 
 /*****Layout modules*****/
+body {
+  padding: 0 10vw;
+}
+
+header {
+  max-width: 300px;
+  margin: 10vh auto;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 2vh;
+}
+
+main {
+  margin: 10vh auto;
+  max-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main [class*='card'] {
+  max-width: 300px;
+  height: 225px;
+  padding: 1.8em 1.8em 1.8em 1.8em;
+  margin-bottom: 2em;
+}
+
+main [class*='card'] h2 {
+  margin-bottom: .4em;
+}
+
+main [class*='card'] img {
+  width: 20%;
+  display: block;
+  margin: 15% 0 0 auto;
+}
 /*# sourceMappingURL=main.css.map */
