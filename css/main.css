@@ -1,0 +1,9 @@
+/*CSS reset && normalize*/
+@import url(/home/psiq/dev/web/normalize.css);
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=main.css.map */
