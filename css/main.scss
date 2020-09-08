@@ -57,7 +57,7 @@ p {
     border-color: hsl(180, 62%, 55%);
 }
 .card2 {
-    border-color: hsl(0, 78%, 62%);
+    border-color:  hsl(0, 78%, 62%);
 }
 .card3 {
     border-color: hsl(34, 97%, 64%);
@@ -87,9 +87,6 @@ main {
     margin: 10vh auto;
     max-width: 300px;
 
-    display: flex;
-    flex-direction: column;
-
     [class *= 'card'] {
 
         max-width: 300px;
@@ -106,6 +103,22 @@ main {
             display: block;
             margin: 15% 0 0 auto;
         }
+    }
+}
+
+@media only screen and (min-width: 1220px) {
+
+    header {
+        max-width: 60%;
+    }
+
+    main {
+        max-width: 100%;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
     }
 }
 
